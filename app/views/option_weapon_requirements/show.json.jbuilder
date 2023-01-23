@@ -1,0 +1,1 @@
+json.partial! "option_weapon_requirements/option_weapon_requirement", option_weapon_requirement: @option_weapon_requirement

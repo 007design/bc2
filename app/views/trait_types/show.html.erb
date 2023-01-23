@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @trait_type %>
+
+<div>
+  <%= link_to "Edit this trait type", edit_trait_type_path(@trait_type) %> |
+  <%= link_to "Back to trait types", trait_types_path %>
+
+  <%= button_to "Destroy this trait type", @trait_type, method: :delete %>
+</div>

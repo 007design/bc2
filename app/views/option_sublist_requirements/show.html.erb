@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_sublist_requirement %>
+
+<div>
+  <%= link_to "Edit this option sublist requirement", edit_option_sublist_requirement_path(@option_sublist_requirement) %> |
+  <%= link_to "Back to option sublist requirements", option_sublist_requirements_path %>
+
+  <%= button_to "Destroy this option sublist requirement", @option_sublist_requirement, method: :delete %>
+</div>

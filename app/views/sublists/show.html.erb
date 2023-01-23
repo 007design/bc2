@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sublist %>
+
+<div>
+  <%= link_to "Edit this sublist", edit_sublist_path(@sublist) %> |
+  <%= link_to "Back to sublists", sublists_path %>
+
+  <%= button_to "Destroy this sublist", @sublist, method: :delete %>
+</div>

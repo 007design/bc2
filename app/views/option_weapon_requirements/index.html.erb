@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option weapon requirements</h1>
+
+<div id="option_weapon_requirements">
+  <% @option_weapon_requirements.each do |option_weapon_requirement| %>
+    <%= render option_weapon_requirement %>
+    <p>
+      <%= link_to "Show this option weapon requirement", option_weapon_requirement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option weapon requirement", new_option_weapon_requirement_path %>

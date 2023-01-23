@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Trait types</h1>
+
+<div id="trait_types">
+  <% @trait_types.each do |trait_type| %>
+    <%= render trait_type %>
+    <p>
+      <%= link_to "Show this trait type", trait_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New trait type", new_trait_type_path %>

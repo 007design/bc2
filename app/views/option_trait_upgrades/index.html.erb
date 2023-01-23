@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option trait upgrades</h1>
+
+<div id="option_trait_upgrades">
+  <% @option_trait_upgrades.each do |option_trait_upgrade| %>
+    <%= render option_trait_upgrade %>
+    <p>
+      <%= link_to "Show this option trait upgrade", option_trait_upgrade %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option trait upgrade", new_option_trait_upgrade_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @chassi %>
+
+<div>
+  <%= link_to "Edit this chassi", edit_chassi_path(@chassi) %> |
+  <%= link_to "Back to chassis", chassis_path %>
+
+  <%= button_to "Destroy this chassi", @chassi, method: :delete %>
+</div>

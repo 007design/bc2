@@ -1,0 +1,2 @@
+class MovementMode < ApplicationRecord
+end

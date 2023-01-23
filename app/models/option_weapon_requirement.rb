@@ -1,0 +1,2 @@
+class OptionWeaponRequirement < ApplicationRecord
+end

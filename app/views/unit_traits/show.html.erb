@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @unit_trait %>
+
+<div>
+  <%= link_to "Edit this unit trait", edit_unit_trait_path(@unit_trait) %> |
+  <%= link_to "Back to unit traits", unit_traits_path %>
+
+  <%= button_to "Destroy this unit trait", @unit_trait, method: :delete %>
+</div>

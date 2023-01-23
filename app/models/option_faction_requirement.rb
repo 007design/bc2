@@ -1,0 +1,2 @@
+class OptionFactionRequirement < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class OptionWeaponUpgrade < ApplicationRecord
+end

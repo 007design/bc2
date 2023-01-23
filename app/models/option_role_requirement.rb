@@ -1,0 +1,2 @@
+class OptionRoleRequirement < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class OptionTraitRequirement < ApplicationRecord
+end

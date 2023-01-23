@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_role_requirement %>
+
+<div>
+  <%= link_to "Edit this option role requirement", edit_option_role_requirement_path(@option_role_requirement) %> |
+  <%= link_to "Back to option role requirements", option_role_requirements_path %>
+
+  <%= button_to "Destroy this option role requirement", @option_role_requirement, method: :delete %>
+</div>

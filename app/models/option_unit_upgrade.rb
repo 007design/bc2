@@ -1,0 +1,2 @@
+class OptionUnitUpgrade < ApplicationRecord
+end

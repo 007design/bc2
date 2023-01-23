@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unit model types</h1>
+
+<div id="unit_model_types">
+  <% @unit_model_types.each do |unit_model_type| %>
+    <%= render unit_model_type %>
+    <p>
+      <%= link_to "Show this unit model type", unit_model_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unit model type", new_unit_model_type_path %>

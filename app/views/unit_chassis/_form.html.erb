@@ -1,0 +1,27 @@
+<%= form_with(model: unit_chassi) do |form| %>
+  <% if unit_chassi.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(unit_chassi.errors.count, "error") %> prohibited this unit_chassi from being saved:</h2>
+
+      <ul>
+        <% unit_chassi.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :unit, style: "display: block" %>
+    <%= form.number_field :unit %>
+  </div>
+
+  <div>
+    <%= form.label :chassis, style: "display: block" %>
+    <%= form.number_field :chassis %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

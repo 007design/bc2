@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Model types</h1>
+
+<div id="model_types">
+  <% @model_types.each do |model_type| %>
+    <%= render model_type %>
+    <p>
+      <%= link_to "Show this model type", model_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New model type", new_model_type_path %>

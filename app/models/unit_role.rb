@@ -1,0 +1,2 @@
+class UnitRole < ApplicationRecord
+end

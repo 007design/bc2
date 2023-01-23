@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_chassis_requirement %>
+
+<div>
+  <%= link_to "Edit this option chassis requirement", edit_option_chassis_requirement_path(@option_chassis_requirement) %> |
+  <%= link_to "Back to option chassis requirements", option_chassis_requirements_path %>
+
+  <%= button_to "Destroy this option chassis requirement", @option_chassis_requirement, method: :delete %>
+</div>

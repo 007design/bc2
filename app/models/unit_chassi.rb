@@ -1,0 +1,2 @@
+class UnitChassi < ApplicationRecord
+end

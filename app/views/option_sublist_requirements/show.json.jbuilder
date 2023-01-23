@@ -1,0 +1,1 @@
+json.partial! "option_sublist_requirements/option_sublist_requirement", option_sublist_requirement: @option_sublist_requirement

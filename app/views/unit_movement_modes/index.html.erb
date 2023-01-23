@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unit movement modes</h1>
+
+<div id="unit_movement_modes">
+  <% @unit_movement_modes.each do |unit_movement_mode| %>
+    <%= render unit_movement_mode %>
+    <p>
+      <%= link_to "Show this unit movement mode", unit_movement_mode %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unit movement mode", new_unit_movement_mode_path %>

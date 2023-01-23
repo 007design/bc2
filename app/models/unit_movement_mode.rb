@@ -1,0 +1,2 @@
+class UnitMovementMode < ApplicationRecord
+end

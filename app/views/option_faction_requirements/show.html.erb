@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_faction_requirement %>
+
+<div>
+  <%= link_to "Edit this option faction requirement", edit_option_faction_requirement_path(@option_faction_requirement) %> |
+  <%= link_to "Back to option faction requirements", option_faction_requirements_path %>
+
+  <%= button_to "Destroy this option faction requirement", @option_faction_requirement, method: :delete %>
+</div>

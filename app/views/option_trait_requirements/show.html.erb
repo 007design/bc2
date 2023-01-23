@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_trait_requirement %>
+
+<div>
+  <%= link_to "Edit this option trait requirement", edit_option_trait_requirement_path(@option_trait_requirement) %> |
+  <%= link_to "Back to option trait requirements", option_trait_requirements_path %>
+
+  <%= button_to "Destroy this option trait requirement", @option_trait_requirement, method: :delete %>
+</div>

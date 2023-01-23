@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_unit_upgrade %>
+
+<div>
+  <%= link_to "Edit this option unit upgrade", edit_option_unit_upgrade_path(@option_unit_upgrade) %> |
+  <%= link_to "Back to option unit upgrades", option_unit_upgrades_path %>
+
+  <%= button_to "Destroy this option unit upgrade", @option_unit_upgrade, method: :delete %>
+</div>

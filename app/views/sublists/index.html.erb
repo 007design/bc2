@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sublists</h1>
+
+<div id="sublists">
+  <% @sublists.each do |sublist| %>
+    <%= render sublist %>
+    <p>
+      <%= link_to "Show this sublist", sublist %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sublist", new_sublist_path %>

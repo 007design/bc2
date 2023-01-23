@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option sublist requirements</h1>
+
+<div id="option_sublist_requirements">
+  <% @option_sublist_requirements.each do |option_sublist_requirement| %>
+    <%= render option_sublist_requirement %>
+    <p>
+      <%= link_to "Show this option sublist requirement", option_sublist_requirement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option sublist requirement", new_option_sublist_requirement_path %>

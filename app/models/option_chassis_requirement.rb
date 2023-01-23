@@ -1,0 +1,2 @@
+class OptionChassisRequirement < ApplicationRecord
+end

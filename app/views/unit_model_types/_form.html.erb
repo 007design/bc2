@@ -1,0 +1,27 @@
+<%= form_with(model: unit_model_type) do |form| %>
+  <% if unit_model_type.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(unit_model_type.errors.count, "error") %> prohibited this unit_model_type from being saved:</h2>
+
+      <ul>
+        <% unit_model_type.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :unit, style: "display: block" %>
+    <%= form.number_field :unit %>
+  </div>
+
+  <div>
+    <%= form.label :model_type, style: "display: block" %>
+    <%= form.number_field :model_type %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class OptionAttributeUpgrade < ApplicationRecord
+end

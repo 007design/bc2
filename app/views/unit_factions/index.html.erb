@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unit factions</h1>
+
+<div id="unit_factions">
+  <% @unit_factions.each do |unit_faction| %>
+    <%= render unit_faction %>
+    <p>
+      <%= link_to "Show this unit faction", unit_faction %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unit faction", new_unit_faction_path %>

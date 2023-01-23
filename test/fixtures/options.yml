@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tv: 1
+  description: MyString
+  type: 1
+  armymax: 1
+  cgmax: 1
+
+two:
+  name: MyString
+  tv: 1
+  description: MyString
+  type: 1
+  armymax: 1
+  cgmax: 1

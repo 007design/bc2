@@ -1,0 +1,32 @@
+<%= form_with(model: unit_trait) do |form| %>
+  <% if unit_trait.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(unit_trait.errors.count, "error") %> prohibited this unit_trait from being saved:</h2>
+
+      <ul>
+        <% unit_trait.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :unit, style: "display: block" %>
+    <%= form.number_field :unit %>
+  </div>
+
+  <div>
+    <%= form.label :trait, style: "display: block" %>
+    <%= form.number_field :trait %>
+  </div>
+
+  <div>
+    <%= form.label :value, style: "display: block" %>
+    <%= form.number_field :value %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @unit_weapon_trait %>
+
+<div>
+  <%= link_to "Edit this unit weapon trait", edit_unit_weapon_trait_path(@unit_weapon_trait) %> |
+  <%= link_to "Back to unit weapon traits", unit_weapon_traits_path %>
+
+  <%= button_to "Destroy this unit weapon trait", @unit_weapon_trait, method: :delete %>
+</div>

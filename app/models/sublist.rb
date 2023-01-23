@@ -1,0 +1,2 @@
+class Sublist < ApplicationRecord
+end

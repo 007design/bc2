@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unit chassis</h1>
+
+<div id="unit_chassis">
+  <% @unit_chassis.each do |unit_chassi| %>
+    <%= render unit_chassi %>
+    <p>
+      <%= link_to "Show this unit chassi", unit_chassi %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unit chassi", new_unit_chassi_path %>

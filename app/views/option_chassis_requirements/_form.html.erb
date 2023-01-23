@@ -1,0 +1,27 @@
+<%= form_with(model: option_chassis_requirement) do |form| %>
+  <% if option_chassis_requirement.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(option_chassis_requirement.errors.count, "error") %> prohibited this option_chassis_requirement from being saved:</h2>
+
+      <ul>
+        <% option_chassis_requirement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :option, style: "display: block" %>
+    <%= form.number_field :option %>
+  </div>
+
+  <div>
+    <%= form.label :requirement, style: "display: block" %>
+    <%= form.number_field :requirement %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

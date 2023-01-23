@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @unit_role %>
+
+<div>
+  <%= link_to "Edit this unit role", edit_unit_role_path(@unit_role) %> |
+  <%= link_to "Back to unit roles", unit_roles_path %>
+
+  <%= button_to "Destroy this unit role", @unit_role, method: :delete %>
+</div>

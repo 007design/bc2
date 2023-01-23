@@ -1,0 +1,1 @@
+json.partial! "option_chassis_requirements/option_chassis_requirement", option_chassis_requirement: @option_chassis_requirement

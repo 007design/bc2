@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unit traits</h1>
+
+<div id="unit_traits">
+  <% @unit_traits.each do |unit_trait| %>
+    <%= render unit_trait %>
+    <p>
+      <%= link_to "Show this unit trait", unit_trait %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unit trait", new_unit_trait_path %>

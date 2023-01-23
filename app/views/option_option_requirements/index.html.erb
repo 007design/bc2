@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option option requirements</h1>
+
+<div id="option_option_requirements">
+  <% @option_option_requirements.each do |option_option_requirement| %>
+    <%= render option_option_requirement %>
+    <p>
+      <%= link_to "Show this option option requirement", option_option_requirement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option option requirement", new_option_option_requirement_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @model_type %>
+
+<div>
+  <%= link_to "Edit this model type", edit_model_type_path(@model_type) %> |
+  <%= link_to "Back to model types", model_types_path %>
+
+  <%= button_to "Destroy this model type", @model_type, method: :delete %>
+</div>

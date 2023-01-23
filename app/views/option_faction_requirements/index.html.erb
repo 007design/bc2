@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option faction requirements</h1>
+
+<div id="option_faction_requirements">
+  <% @option_faction_requirements.each do |option_faction_requirement| %>
+    <%= render option_faction_requirement %>
+    <p>
+      <%= link_to "Show this option faction requirement", option_faction_requirement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option faction requirement", new_option_faction_requirement_path %>

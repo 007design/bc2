@@ -1,0 +1,2 @@
+class OptionTraitUpgrade < ApplicationRecord
+end

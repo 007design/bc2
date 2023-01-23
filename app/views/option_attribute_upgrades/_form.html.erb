@@ -1,0 +1,32 @@
+<%= form_with(model: option_attribute_upgrade) do |form| %>
+  <% if option_attribute_upgrade.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(option_attribute_upgrade.errors.count, "error") %> prohibited this option_attribute_upgrade from being saved:</h2>
+
+      <ul>
+        <% option_attribute_upgrade.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :option, style: "display: block" %>
+    <%= form.number_field :option %>
+  </div>
+
+  <div>
+    <%= form.label :upgrade, style: "display: block" %>
+    <%= form.number_field :upgrade %>
+  </div>
+
+  <div>
+    <%= form.label :value, style: "display: block" %>
+    <%= form.number_field :value %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

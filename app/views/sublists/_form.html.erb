@@ -1,0 +1,27 @@
+<%= form_with(model: sublist) do |form| %>
+  <% if sublist.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sublist.errors.count, "error") %> prohibited this sublist from being saved:</h2>
+
+      <ul>
+        <% sublist.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.number_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :faction, style: "display: block" %>
+    <%= form.number_field :faction %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

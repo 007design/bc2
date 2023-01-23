@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_weapon_requirement %>
+
+<div>
+  <%= link_to "Edit this option weapon requirement", edit_option_weapon_requirement_path(@option_weapon_requirement) %> |
+  <%= link_to "Back to option weapon requirements", option_weapon_requirements_path %>
+
+  <%= button_to "Destroy this option weapon requirement", @option_weapon_requirement, method: :delete %>
+</div>

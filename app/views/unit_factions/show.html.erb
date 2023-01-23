@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @unit_faction %>
+
+<div>
+  <%= link_to "Edit this unit faction", edit_unit_faction_path(@unit_faction) %> |
+  <%= link_to "Back to unit factions", unit_factions_path %>
+
+  <%= button_to "Destroy this unit faction", @unit_faction, method: :delete %>
+</div>

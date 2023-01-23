@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @option_trait_upgrade %>
+
+<div>
+  <%= link_to "Edit this option trait upgrade", edit_option_trait_upgrade_path(@option_trait_upgrade) %> |
+  <%= link_to "Back to option trait upgrades", option_trait_upgrades_path %>
+
+  <%= button_to "Destroy this option trait upgrade", @option_trait_upgrade, method: :delete %>
+</div>

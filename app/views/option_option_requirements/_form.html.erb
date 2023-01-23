@@ -1,0 +1,37 @@
+<%= form_with(model: option_option_requirement) do |form| %>
+  <% if option_option_requirement.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(option_option_requirement.errors.count, "error") %> prohibited this option_option_requirement from being saved:</h2>
+
+      <ul>
+        <% option_option_requirement.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :option, style: "display: block" %>
+    <%= form.number_field :option %>
+  </div>
+
+  <div>
+    <%= form.label :requirement, style: "display: block" %>
+    <%= form.number_field :requirement %>
+  </div>
+
+  <div>
+    <%= form.label :min, style: "display: block" %>
+    <%= form.number_field :min %>
+  </div>
+
+  <div>
+    <%= form.label :max, style: "display: block" %>
+    <%= form.number_field :max %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

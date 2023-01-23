@@ -1,0 +1,2 @@
+class OptionSublistRequirement < ApplicationRecord
+end

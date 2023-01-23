@@ -1,0 +1,2 @@
+class UnitModelType < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Option chassis requirements</h1>
+
+<div id="option_chassis_requirements">
+  <% @option_chassis_requirements.each do |option_chassis_requirement| %>
+    <%= render option_chassis_requirement %>
+    <p>
+      <%= link_to "Show this option chassis requirement", option_chassis_requirement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New option chassis requirement", new_option_chassis_requirement_path %>

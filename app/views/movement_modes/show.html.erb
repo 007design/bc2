@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @movement_mode %>
+
+<div>
+  <%= link_to "Edit this movement mode", edit_movement_mode_path(@movement_mode) %> |
+  <%= link_to "Back to movement modes", movement_modes_path %>
+
+  <%= button_to "Destroy this movement mode", @movement_mode, method: :delete %>
+</div>

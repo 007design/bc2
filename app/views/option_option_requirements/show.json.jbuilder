@@ -1,0 +1,1 @@
+json.partial! "option_option_requirements/option_option_requirement", option_option_requirement: @option_option_requirement

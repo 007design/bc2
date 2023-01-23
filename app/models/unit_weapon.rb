@@ -1,0 +1,2 @@
+class UnitWeapon < ApplicationRecord
+end
